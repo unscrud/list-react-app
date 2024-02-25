@@ -8,16 +8,16 @@ RUN apk add --no-cache build-base && \
     npm install -g pnpm
 
 # Expose port (optional, adjust based on your application)
-EXPOSE 3000
-
-# Volume mapping
-VOLUME ["~/app:/app"]
+EXPOSE 5173
 
 # Command to run your application (replace with your actual command)
-CMD [ "pnpm", "start" ]
+CMD pnpm run dev --host
 
 # Set container name
 ENV CONTAINER_NAME my-node
 
-# Set hostname to container name
-RUN hostname $CONTAINER_NAME
+# usar para executar o container no modo iterativo
+# docker run -p 8080:5173 --name mynode -v "C:\dev\FEV\list-react-app:/app" -it danieldevop/mynode sh
+
+# usar para executar o container em segundo plano
+# docker run -p 8080:5173 --name mynode -d -v "C:\dev\FEV\list-react-app:/app" danieldevop/mynode
