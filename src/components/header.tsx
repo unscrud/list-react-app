@@ -62,25 +62,24 @@ export function Header() {
                     <span className='text-sm font-medium text-zinc-100'>Ignite</span>
                     <ChevronDown className='text-zinc-600 size-4' />
                 </div>
-
-                <div className="flex items-center gap-3">
-                    <div className="flex flex-col items-end gap-0.5">
-                        <span className="text-sm font-medium">
-                            UnsCrud
-                        </span>
-                        <span className="text-xs text-zinc-400">
-                            @UnsCrud
-                        </span>
-                    </div>
-                    <img 
-                            src="https://github.com/unscrud.png"
-                            alt="Unscrud Logo"
-                            className='size-8 rounded-full'    
-                        />
-
-                        <ChevronDown className='size-4 text-zinc-600' />
-                </div>
             </div>
+            <div className="flex items-center gap-3">
+                <div className="flex flex-col items-end gap-0.5">
+                    <span className="text-sm font-medium">
+                        UnsCrud
+                    </span>
+                    <span className="text-xs text-zinc-400">
+                        @UnsCrud
+                    </span>
+                </div>
+                <img 
+                        src="https://github.com/unscrud.png"
+                        alt="Unscrud Logo"
+                        className='size-8 rounded-full'    
+                    />
+
+                    <ChevronDown className='size-4 text-zinc-600' />
+            </div>  
         </div>
     )
 }
