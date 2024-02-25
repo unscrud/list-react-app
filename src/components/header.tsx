@@ -1,3 +1,4 @@
+import { ChevronDown } from 'lucide-react'
 import nivoLogo from '../assets/logo-nivo.svg'
 import { Badge } from './ui/badge'
 
@@ -27,7 +28,35 @@ export function Header() {
                     />
                 </svg>
 
-                
+                <div className='flex gap-2.5 items-center'>
+                    <img 
+                        src="https://github.com/rocketseat.png"
+                        className='size-5 rounded-full'
+                        alt="" 
+                    />
+
+                    <span className='text-sm font-medium text-zinc-100'>Rocketseat</span>
+
+                    <Badge>PRO</Badge>
+
+                    <ChevronDown className='text-zinc-600 size-4' />
+                </div>
+
+                <svg
+                    width="6"
+                    height="16"
+                    viewBox="0 0 6 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <line
+                        x1="1.18372"
+                        y1="15.598"
+                        x2="5.32483"
+                        y2="0.143194"
+                        className="stroke-zinc-700"
+                    />
+                </svg>
             </div>
         </div>
     )
