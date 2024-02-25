@@ -8,7 +8,7 @@ export function Header() {
                 <div className=" flex items-center gap-2.5">
                     <img src={nivoLogo} alt="nivo.video" />
 
-                    <Badge />
+                    <Badge>BETA</Badge>
                 </div>
             </div>
         </div>
