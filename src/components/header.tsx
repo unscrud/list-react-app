@@ -1,4 +1,5 @@
 import nivoLogo from '../assets/logo-nivo.svg'
+import { Badge } from './ui/badge'
 
 export function Header() {
     return (
@@ -6,6 +7,8 @@ export function Header() {
             <div className=" flex items-center gap-3">
                 <div className=" flex items-center gap-2.5">
                     <img src={nivoLogo} alt="nivo.video" />
+
+                    <Badge />
                 </div>
             </div>
         </div>
